@@ -26,6 +26,9 @@ app.get('/', api.handleRoot)
 app.get('/products', api.listProducts)
 app.get('/products/:id', api.getProduct)
 app.post('/createproducts', api.createProduct)
+app.post('/delete', api.deleteProduct)
+app.post('/update', api.updateProduct)
+
 
 
 // Boot the server

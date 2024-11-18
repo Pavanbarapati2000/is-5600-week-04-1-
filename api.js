@@ -59,12 +59,24 @@ async function createProduct (req, res) {
     console.log('request body:', req.body)
     res.json(req.body)
   }
+
+  async function deleteProduct (req, res) {
+    console.log('request body:', req.body)
+    res.json(req.body)
+  }
+
+  async function updateProduct (req, res) {
+    console.log('request body:', req.body)
+    res.json(req.body)
+  }
 // Update the module exports
 module.exports = autoCatch({
     handleRoot,
     listProducts,
     getProduct,
-    createProduct
+    createProduct,
+    deleteProduct,
+    updateProduct
   });
   
 
